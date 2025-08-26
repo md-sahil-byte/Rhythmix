@@ -90,7 +90,7 @@ body {
 }
 
 .library {
-    min-height: 85vh;
+    min-height: 70vh;
     position: relative;
     background-color: var(--secondary-bg-color);
 }
