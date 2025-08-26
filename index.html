@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Rhythmix-Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex ">
+        <!-- left side of the main container , containing home and library section -->
+        <div class="left ">
+            <div class="close">
+                <img style="width: 25px; height: 25px;" src="img/close.svg" alt="" class="invert">
+            </div>
+
+            <!-- home, on the left side of the screen -->
+            <div class="home  rounded m-1 p-1">
+
+                <!-- spotify logo -->
+                <div class="logo m-1"><img width="100px" height="28px" src="img/logo.png" alt="Rhythmix" class="invert"></div>
+
+                <!-- home and search logo -->
+                <ul>
+                    <li><img src="img/home.svg" alt="home" class="invert">Home</li>
+                    <li class="search"><img src="img/search.svg" alt="search" class="invert ">Search</li>
+                </ul>
+            </div>
+
+            <!-- library  , on the left part of the screen -->
+            <div class="library  rounded m-1 p-1">
+
+                <!-- heading of library -->
+                <div class="heading items-center  flex">
+                    <img src="img/playlist.svg" alt="" class="invert">
+                    <h2 class="loadedLibrary">Your Library</h2>
+
+                </div>
+
+                <!-- song list -->
+                <div class="song-list">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <!-- footer of the library -->
+                <div class="footer">
+                    <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- right side of the main container containing navbar and songs options with playbar -->
+        <div class="right  rounded m-1 ">
+
+            <!-- header on the right side , containing login , signup and spotify playlist -->
+            <div class="header  rounded m-1 ">
+
+
+                <div class="nav flex items-center justify-between gap">
+                    <!-- hamberger icon -->
+                    <img src="img/hamburger.svg" alt="" class="invert hamburger">
+
+                </div>
+
+                <!-- login and sign-up buttons -->
+                <div class="buttons">
+                    <button class="signup-button">Sign Up</button>
+                    <button class="login-button">Log In</button>
+                </div>
+            </div>
+            <!-- spotify playlist -->
+            <div class="spotify-playlist">
+                <h1>SpotifyPlaylist</h1>
+
+                <!-- card container , containing song cards -->
+                <div class="card-container "></div>
+
+                <!-- playbar to play songs  -->
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+
+                    <!-- contains the above section of playbar -->
+                    <div class="above-bar">
+                        <div class="song-info"></div>
+
+                        <!-- contains buttons to play/pause , next and previous song -->
+                        <div class="song-buttons">
+                            <img id="previous" src="img/prevsong.svg " alt="">
+                            <img id="play" src="img/play.svg" alt="">
+                            <img id="next" src="img/nextsong.svg " alt="">
+                        </div>
+                        <div class="timeVolume">
+
+                            <div class="song-time"></div>
+                            <div class="volume">
+                                <img  src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- java script is added here -->
+    <script src="js/script.js"></script>
+</body>
